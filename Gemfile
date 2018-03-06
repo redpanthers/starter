@@ -31,6 +31,11 @@ group :development do
   gem 'letter_opener'
   gem 'better_errors'
   gem 'binding_of_caller'
+
+  # Deployment
+
+  gem 'mina', require: false
+  gem 'mina-multistage', require: false
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
