@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Red Panthers Ruby on Rails project startup template
 
-Things you may want to cover:
+We have found that we are using and reusing a lot of gem and rails best practices over and over again
+in all our rails project. We have compiled them together in a single project so as to improve our
+time to get started on a project.
 
-* Ruby version
+## Setup
 
-* System dependencies
 
-* Configuration
+### Database
 
-* Database creation
 
-* Database initialization
+## Gems Used
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Note for maintainers
 
-* Deployment instructions
+Always keep the project updated with the latest for version of Rails and Ruby.
 
-* ...
+When we start a new project it is always better to install the latest version of
+all the tools, even if your not familiar with it. Because the chances are you might
+not be able to update it for a long, long time once you get started.
+
+https://twitter.com/coderhs/status/966713134294560769
