@@ -8,8 +8,14 @@ time to get started on a project.
 
 ## Setup
 
+run `./bin/setup`
 
-### Database
+or if you want to run step by step follow the below instruction.
+
+```
+cp config/database.yml.example config/database.yml
+cp config/secrets.yml.example config/secrets.yml
+```
 
 
 ## Gems Used
