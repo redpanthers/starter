@@ -1,0 +1,25 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+  timeout: 5000
+  username: senitron
+  password: senitronpwd
+
+development:
+  <<: *default
+  database: starter_development
+
+test:
+  <<: *default
+  database: starter_test
+
+production:
+    <<: *default
+    database: <%= ENV['DB_NAME'] %>
+    username: <%= ENV['USERNAME'] %>
+    password: <%= ENV['PASSWORD'] %>
+    host: <%= ENV['HOSTNAME'] %>
+    port: <%= ENV['PORT'] %>
+
