@@ -15,11 +15,19 @@ test:
   <<: *default
   database: starter_test
 
+staging:
+  <<: *default
+  database: <%= ENV['STAGING_DB_NAME'] %>
+  username: <%= ENV['STAGING_USERNAME'] %>
+  password: <%= ENV['STAGING_PASSWORD'] %>
+  host: <%= ENV['STAGING_HOSTNAME'] %>
+  port: <%= ENV['STAGING_PORT'] %>
+
 production:
-    <<: *default
-    database: <%= ENV['DB_NAME'] %>
-    username: <%= ENV['USERNAME'] %>
-    password: <%= ENV['PASSWORD'] %>
-    host: <%= ENV['HOSTNAME'] %>
-    port: <%= ENV['PORT'] %>
+  <<: *default
+  database: <%= ENV['DB_NAME'] %>
+  username: <%= ENV['USERNAME'] %>
+  password: <%= ENV['PASSWORD'] %>
+  host: <%= ENV['HOSTNAME'] %>
+  port: <%= ENV['PORT'] %>
 
