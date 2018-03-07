@@ -18,9 +18,6 @@ cp config/secrets.yml.example config/secrets.yml
 ```
 
 
-## Gems Used
-
-
 ## Note for maintainers
 
 Always keep the project updated with the latest for version of Rails and Ruby.
