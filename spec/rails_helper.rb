@@ -26,6 +26,26 @@ require 'rspec/rails'
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.maintain_test_schema!
 
+def enable_test_coverage
+  require 'simplecov'
+
+  SimpleCov.start do
+    add_filter '/test/'
+
+    add_group 'Models',       'app/models'
+    add_group 'Mailers',      'app/mailers'
+    add_group 'Controllers',  'app/controllers'
+    add_group 'Helpers',      'app/helpers'
+    add_group 'Jobs',         'app/jobs'
+    add_group 'Services',     'app/services'
+    add_group 'Lib',          'lib/'
+  end
+end
+
+enable_test_coverage if (ENV['COVERAGE'] || true)
+
+ENV["RAILS_ENV"] ||= "test"
+
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
