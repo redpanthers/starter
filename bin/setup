@@ -27,9 +27,15 @@ chdir APP_ROOT do
     cp 'config/database.yml.example', 'config/database.yml'
   end
 
-  # puts "\n== Copying example database files =="
+  # puts "\n== Copying example secrets configuration =="
   unless File.exist?('config/secrets.yml')
     cp 'config/secrets.yml.example', 'config/secrets.yml'
+  end
+
+  # puts "\n== Copy application.yml if development mode"
+  # puts "\n== as in production the configuration comes from the enviornment"
+  if Rails.env.development? && File.exist?('config/application.yml')
+    cp 'config/application.yml.example', 'config/application.yml'
   end
 
   puts "\n== Preparing database =="
