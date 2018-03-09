@@ -9,7 +9,7 @@
   },
   "lint-staged": {
     "app/**/*.{js,es6,jsx,scss,css}": [
-      "./node_modules/prettier/bin/prettier.js --trailing-comma es5 --write",
+      "./node_modules/prettier/bin-prettier.js --trailing-comma es5 --write",
       "git add"
     ],
     "{app,test}/**/*.rb": [
