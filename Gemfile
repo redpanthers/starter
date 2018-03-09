@@ -18,6 +18,10 @@ gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 
+group :staging, :production do
+  gem 'rails_12factor'
+end
+
 group :development, :test do
   gem 'bundler-audit', require: false
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
