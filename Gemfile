@@ -38,7 +38,7 @@ group :development, :test do
   gem 'pry-rails'
 
   gem 'rspec-rails'
-  gem 'ruby_audit'
+  gem 'ruby_audit', require: false
   gem 'selenium-webdriver'
 end
 
