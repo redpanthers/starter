@@ -1,5 +1,23 @@
 {
   "name": "starter",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "app/**/*.{js,es6,jsx,scss,css}": [
+      "./node_modules/prettier/bin/prettier.js --trailing-comma es5 --write",
+      "git add"
+    ],
+    "{app,test}/**/*.rb": [
+      "bundle exec rubocop -a",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^0.13.4",
+    "lint-staged": "^3.6.0",
+    "prettier": "^1.4.2"
+  }
 }
