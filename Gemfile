@@ -27,6 +27,12 @@ group :development, :test do
   gem 'bundler-audit', require: false
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara', '~> 2.13'
+
+  # Use Pry instead of IRB
+  gem 'pry-byebug'
+  gem 'pry-doc'
+  gem 'pry-rails'
+
   gem 'rspec-rails'
   gem 'ruby_audit'
   gem 'selenium-webdriver'
