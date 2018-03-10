@@ -8,7 +8,6 @@ git_source(:github) do |repo_name|
 end
 
 gem 'bootsnap'
-gem 'coffee-rails', '~> 4.2'
 gem 'haml-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'pg'
@@ -19,10 +18,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker', '~> 3.2'
-
-group :staging, :production do
-  gem 'rails_12factor'
-end
 
 group :development, :test do
   gem 'brakeman', require: false
