@@ -17,7 +17,7 @@ cp config/database.yml.example config/database.yml
 cp config/secrets.yml.example config/secrets.yml
 ```
 
-## Run in development
+## Start project while in development
 
 We use foreman to manage all our services. So to start the rails project run the following
 command.
