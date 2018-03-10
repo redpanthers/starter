@@ -39,9 +39,9 @@ gems are added to our project to detect our vulnerabilities before the hackers d
 
 Read through these articles below if you are begineer or first time Rails developer.
 
-[http://guides.rubyonrails.org/security.html](Ruby on Rails security guide)
+[Ruby on Rails security guide](http://guides.rubyonrails.org/security.html)
 
-[https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet](OWASP secruity cheatsheet for Rails)
+[OWASP secruity cheatsheet for Rails](https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet)
 
 
 ## Note for maintainers
