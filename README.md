@@ -26,6 +26,23 @@ command.
 foreman start -f Procfile.dev
 ```
 
+## Secruity
+
+We give a lot of importance to security when we build/maintain a rails application. The following
+gems are added to our project to detect our vulnerabilities before the hackers do.
+
+| Name     | Command to run |
+| ---      | ---       |
+| Bundler Audit | `bundle audit`        |
+| Ruby Audot     | `bundle exec ruby-audit`       |
+| Brakeman | `brakeman ./` |
+
+Read through these articles below if you are begineer or first time Rails developer.
+
+[http://guides.rubyonrails.org/security.html](Ruby on Rails security guide)
+
+[https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet](OWASP secruity cheatsheet for Rails)
+
 
 ## Note for maintainers
 
