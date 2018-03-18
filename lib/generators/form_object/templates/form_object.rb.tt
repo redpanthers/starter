@@ -1,0 +1,11 @@
+<% module_namespacing do -%>
+class <%= class_name %>Form
+  include ActiveModel::Model 
+  
+  attr_accessor <%= attribute_symbols.join(", ") %>
+
+  def self.model_name
+    ActiveModel::Name.new(self, nil, '<%= class_name %>Form')
+  end
+end
+<% end -%>

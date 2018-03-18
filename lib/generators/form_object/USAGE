@@ -1,0 +1,8 @@
+Description:
+    Creates service object
+
+Example:
+    rails generate form_object Thing
+
+    This will create:
+        app/services/thing.rb

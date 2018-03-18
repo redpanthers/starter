@@ -1,0 +1,6 @@
+require 'rails_helper'
+<% module_namespacing do -%>
+  RSpec.describe <%= class_name %>Form do
+    pending "add some tests to the <%= file_name %>_form_spec.rb"
+  end
+<% end -%>

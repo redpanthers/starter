@@ -1,0 +1,8 @@
+<% module_namespacing do -%>
+class <%= class_name %>Query
+  attr_reader :relation  
+  def initialize(relation = <%= class_name %>.all)
+    @relation = relation
+  end
+end
+<% end -%>
