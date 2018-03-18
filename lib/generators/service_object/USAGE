@@ -1,0 +1,8 @@
+Description:
+    Generates plain ruby service object
+
+Example:
+    rails generate service_object Thing
+
+    This will create:
+        app/services/thing.rb

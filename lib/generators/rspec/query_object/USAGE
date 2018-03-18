@@ -1,0 +1,8 @@
+Description:
+    Generates query object
+
+Example:
+    rails generate rspec::query_object Thing
+
+    This will create:
+        spec/queries/thing_query_spec.rb

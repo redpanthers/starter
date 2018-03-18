@@ -1,0 +1,8 @@
+Description:
+    Generates query object
+
+Example:
+    rails generate query_object Thing
+
+    This will create:
+        app/queries/thing_query.rb

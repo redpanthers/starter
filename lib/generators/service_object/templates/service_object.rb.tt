@@ -1,0 +1,18 @@
+<% module_namespacing do -%>
+class <%= class_name %>
+  def initialize(<%= attribute_names.join(", ") %>)
+    <% attribute_names.each do |attribute| -%>
+    @<%= attribute %> = <%= attribute %>
+    <% end %>
+  end
+
+  def run
+    # Write service logic here
+  end
+  <% if attributes_names.present? -%>
+
+  private
+  attr_accessor <%= attributes_symbols.join(", ") %>
+  <% end %>
+end
+<% end -%>

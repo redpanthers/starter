@@ -1,0 +1,8 @@
+Description:
+    Generate spec for a form object
+
+Example:
+    rails generate rspec:form_object Thing
+
+    This will create:
+        spec/forms/thing_spec.rb

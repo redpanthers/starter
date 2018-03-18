@@ -1,0 +1,8 @@
+Description:
+    Generate spec for plain ruby service object
+
+Example:
+    rails generate rspec:service_object Thing
+
+    This will create:
+        spec/services/thing_spec.rb
