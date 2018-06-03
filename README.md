@@ -6,7 +6,25 @@ We have found that we are using and reusing a lot of gem and rails best practice
 in all our rails project. We have compiled them together in a single project so as to improve our
 time to get started on a project.
 
-## Setup
+## Start new project
+
+To start a new rails project using this starter template.
+
+Example name of new project InvoiceDashboard
+
+Step 1: Clone Project
+
+```sh
+git clone git@github.com:redpanthers/starter.git invoice_dashboard
+```
+
+Step 2: Rename project
+
+```sh
+perl -e "s/Starter/InvoiceDashboard/g" -pi $(find . -type f)
+```
+
+## Setup Development
 
 run `./bin/setup`
 
