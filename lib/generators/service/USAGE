@@ -2,7 +2,7 @@ Description:
     Generates plain ruby service object
 
 Example:
-    rails generate service_object Thing
+    rails generate service Thing
 
     This will create:
         app/services/thing.rb
