@@ -2,7 +2,7 @@ Description:
     Generates query object
 
 Example:
-    rails generate query_object Thing
+    rails generate query Thing
 
     This will create:
         app/queries/thing_query.rb

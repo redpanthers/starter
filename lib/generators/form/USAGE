@@ -2,7 +2,7 @@ Description:
     Creates service object
 
 Example:
-    rails generate form_object Thing
+    rails generate forms Thing
 
     This will create:
-        app/services/thing.rb
+        app/forms/thing.rb

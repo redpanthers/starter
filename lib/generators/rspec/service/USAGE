@@ -2,7 +2,7 @@ Description:
     Generate spec for plain ruby service object
 
 Example:
-    rails generate rspec:service_object Thing
+    rails generate rspec:service Thing
 
     This will create:
-        spec/services/thing_spec.rb
+        spec/services/thing_service_spec.rb

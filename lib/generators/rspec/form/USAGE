@@ -2,7 +2,7 @@ Description:
     Generate spec for a form object
 
 Example:
-    rails generate rspec:form_object Thing
+    rails generate rspec:form Thing
 
     This will create:
-        spec/forms/thing_spec.rb
+        spec/forms/thing_form_spec.rb

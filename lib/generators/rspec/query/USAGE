@@ -2,7 +2,7 @@ Description:
     Generates query object
 
 Example:
-    rails generate rspec::query_object Thing
+    rails generate rspec::query Thing
 
     This will create:
         spec/queries/thing_query_spec.rb
