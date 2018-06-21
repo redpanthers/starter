@@ -52,7 +52,7 @@ gems are added to our project to detect our vulnerabilities before the hackers d
 | Name     | Command to run |
 | ---      | ---       |
 | Bundler Audit | `bundle audit`        |
-| Ruby Audot     | `bundle exec ruby-audit`       |
+| Ruby Audit     | `bundle exec ruby-audit`       |
 | Brakeman | `brakeman ./` |
 
 Read through these articles below if you are begineer or first time Rails developer.
